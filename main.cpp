@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 
-std::string reverse_chars( std::string string ) {
+std::string reverse_chars( const std::string& string ) {
     std::vector<char> data( string.begin(), string.end() );
     char temp[ string.length() ];
 
