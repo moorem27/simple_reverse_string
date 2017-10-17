@@ -2,11 +2,12 @@
 #include <algorithm>
 
 std::string reverse_chars( const std::string& string ) {
+    const size_t length = string.length();
     std::vector<char> data( string.begin(), string.end() );
-    char temp[ string.length() ];
+    char temp[ length ];
 
-    for( int i = 0; i < string.length(); i++ ) {
-        temp[ i ] = data[ string.length() - 1 - i ];
+    for( int i = 0; i < length; i++ ) {
+        temp[ i ] = data[ length - 1 - i ];
     }
 
     std::string value = temp;
